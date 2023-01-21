@@ -2,10 +2,20 @@
 
 # Bash Script for installing work software in Linux Mint and Ubuntu
 
+## adding ppa
+### copyq - clipboard manager
+sudo add-apt-repository ppa:hluk/copyq
+
+### syncthing - file synchronization
+sudo curl -o /usr/share/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
+echo "deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
+
+
 ## updating repos and upgrading
 sudo apt update 
 sudo apt upgrade -y
 sudo apt dist-upgrade -y
+
 
 # install external software using bash (see folder bash-to-install/)
 echo " "
@@ -18,9 +28,11 @@ do
 	./apt-to-install/install_by_apt.sh "$apt_software" -y
 done
 
+
 # Install all snaps
 echo " "
 echo "Installing by snap"
+
 
 # remove snap lock from linux mint
 # see this post https://winaero.com/enable-or-disable-snap-in-linux-mint-20/
