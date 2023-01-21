@@ -1,0 +1,15 @@
+seahorse
+xreader
+gucharmap
+simple-scan
+drawing
+thunderbird*
+transmission*
+transmission-gtk*
+transmission-common*
+rhythmbox*
+librhythmbox-core10*
+rhythmbox-data
+bulky
+sticky
+gnome-screenshot
