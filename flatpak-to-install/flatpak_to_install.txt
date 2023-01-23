@@ -1,1 +1,4 @@
-code
+Md.Obsidian.Obsidian
+net.ankiweb.Anki
+com.todoist.Todoist
+org.freeplane.App
