@@ -14,7 +14,7 @@ echo "deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://
 ## deleting pre-installed software
 for apt_software in $(cat apt-to-install/list_to_uninstall.txt)
 do
-	./apt-to-install/install_by_apt.sh "$apt_software" -y
+	./apt-to-install/uninstall_by_apt.sh "$apt_software" -y
 done
 
 ## updating repos and upgrading
