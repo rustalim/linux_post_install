@@ -13,3 +13,8 @@ rhythmbox-data
 bulky
 sticky
 gnome-screenshot
+onboard
+onboard-common
+pix
+pix-data
+pix-dbg
