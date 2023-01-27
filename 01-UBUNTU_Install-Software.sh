@@ -31,28 +31,29 @@ done
 
 
 # Install all snaps
-echo " "
-echo "Installing by snap"
-
+#echo " "
+#echo "Installing by snap"
 
 # remove snap lock from linux mint
 # see this post https://winaero.com/enable-or-disable-snap-in-linux-mint-20/
-lock_file="/etc/apt/preferences.d/nosnap.pref"
+#lock_file="/etc/apt/preferences.d/nosnap.pref"
 
-if [ -a "$lock_file" ]
-  then
-       sudo rm "$lock_file"
-fi
+#if [ -a "$lock_file" ]
+  #then
+       #sudo rm "$lock_file"
+#fi
 
-echo "  - Installing snap by apt"
-sudo apt install snapd -y > /dev/null 2>&1
+#echo "  - Installing snap by apt"
+#sudo apt install snapd -y > /dev/null 2>&1
 
-echo "  - Installing by snap"
-for snap_software in $(cat snap-to-install/snaps_to_install.txt)
-do
-  echo "    - $snap_software"
-	sudo snap install "$snap_software" --classic > /dev/null 2>&1
-done
+#echo "  - Installing by snap"
+#for snap_software in $(cat snap-to-install/snaps_to_install.txt)
+#do
+  #echo "    - $snap_software"
+	#sudo snap install "$snap_software" --classic > /dev/null 2>&1
+#done
+
+
 
 ## Make sure to update and clean
 echo " "
