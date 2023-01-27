@@ -17,13 +17,14 @@ do
 	./apt-to-install/uninstall_by_apt.sh "$apt_software" -y
 done
 
+
 ## updating repos and upgrading
 sudo apt update 
 sudo apt upgrade -y
 sudo apt dist-upgrade -y
 
 
-# install by apt
+## install by apt
 for apt_software in $(cat apt-to-install/list_to_install.txt)
 do
 	./apt-to-install/install_by_apt.sh "$apt_software" -y
@@ -54,6 +55,15 @@ done
 #done
 
 
+## Install all flatpaks
+echo " "
+echo "  - Installing by flatpak"
+for package in $(cat flatpak-to-install/flatpak_to_install.txt)
+do
+  echo "    - $package"
+	flatpak install -y "$package" > /dev/null 2>&1
+done
+
 
 ## Make sure to update and clean
 echo " "
@@ -62,6 +72,7 @@ sudo apt update > /dev/null 2>&1
 sudo apt upgrade -y > /dev/null 2>&1
 sudo apt autoclean > /dev/null 2>&1
 sudo apt autoremove -y > /dev/null 2>&1
+
 
 echo " "
 echo " "
