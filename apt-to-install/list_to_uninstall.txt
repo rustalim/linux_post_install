@@ -18,3 +18,4 @@ onboard-common
 pix
 pix-data
 pix-dbg
+xed

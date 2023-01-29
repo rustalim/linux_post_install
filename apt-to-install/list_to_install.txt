@@ -2,15 +2,13 @@ vlc
 doublecmd-gtk
 qbittorrent
 evolution
+evolution-dev
 syncthing
 chromium
 torbrowser-launcher
 emacs
 copyq
 copyq-plugins
-geany
-geany-plugin-addons
-geany-plugin-autoclose
 recoll
 dconf-editor
 git
