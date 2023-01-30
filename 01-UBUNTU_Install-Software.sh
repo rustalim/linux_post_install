@@ -4,7 +4,7 @@
 
 ## adding ppa
 ### copyq - clipboard manager
-sudo add-apt-repository ppa:hluk/copyq
+sudo add-apt-repository ppa:hluk/copyq -y
 
 ### syncthing - file synchronization
 sudo curl -o /usr/share/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
