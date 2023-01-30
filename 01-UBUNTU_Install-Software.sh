@@ -65,6 +65,10 @@ do
 done
 
 
+## Add JetBrainsMono font
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
+
+
 ## Make sure to update and clean
 echo " "
 echo "-> Updating, upgrading and cleaning <-"
