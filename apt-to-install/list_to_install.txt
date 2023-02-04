@@ -19,4 +19,4 @@ zathura
 zathura-djvu
 zathura-ps
 default-jdk
-
+zotero

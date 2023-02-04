@@ -2,7 +2,7 @@
 
 # Bash Script for installing work software in Linux Mint and Ubuntu
 
-## adding ppa
+## adding ppa and repos
 ### copyq - clipboard manager
 sudo add-apt-repository ppa:hluk/copyq -y
 
@@ -10,6 +10,8 @@ sudo add-apt-repository ppa:hluk/copyq -y
 sudo curl -o /usr/share/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
 echo "deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
 
+### zotero - reference manager
+curl -sL https://raw.githubusercontent.com/retorquere/zotero-deb/master/install.sh | sudo bash
 
 ## deleting pre-installed software
 for apt_software in $(cat apt-to-install/list_to_uninstall.txt)
